@@ -15,9 +15,3 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 #display table on the page
 streamlit.dataframe(fruits_to_show)
-
-options = st.multiselect(
-    "What are your favorite colors",
-    ["Green", "Yellow", "Red", "Blue"],
-    default=["Yellow"],
-)
