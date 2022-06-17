@@ -13,6 +13,8 @@ streamlit.header('Fruitvice Fruit Advice!')
 add_my_fruit=streamlit.text_input('What fruit would you like to add')
 streamlit.write('Thanks for adding',add_my_fruit)
 
+my_cur.execute("insert into fruit_load_list values('from streamlit')")
+
 streamlit.title('My Parents New Healthy Diner')
 streamlit.header('Breakfast Menu')
 streamlit.text('Omega 3 & Blueberry Oatmeal')
