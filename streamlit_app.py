@@ -32,7 +32,7 @@ try:
     streamlit.dataframe(fruityvice_normalized)
 
 except URLError as e:
-streamlit.error()
+  streamlit.error()
 
 fruityvice_response=requests.get("https://fruityvice.com/api/fruit/",fruit_choice)
 #streamlit.text(fruityvice_response.json())
